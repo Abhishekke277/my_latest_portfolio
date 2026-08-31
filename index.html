@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Kevat — Full-Stack Developer</title>
+    <meta name="description" content="Abhishek Kevat — Full-Stack Web Developer & Applied AI learner. BCA (MCU Bhopal), SDE + Applied AI @ Masai School / Vishlesan I-Hub / IIT Patna." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="mobile-bar">
+      <div class="mobile-bar-brand">AK<span class="brand-mark">.</span></div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">Abhishek<span class="brand-mark">.</span>dev</div>
+        <button class="menu-close" id="menuClose" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="side-nav">
+        <a href="#hero" class="nav-item" data-section="hero"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#about" class="nav-item" data-section="about"><i class="fa-solid fa-user"></i><span>About</span></a>
+        <a href="#skills" class="nav-item" data-section="skills"><i class="fa-solid fa-layer-group"></i><span>Skills</span></a>
+        <a href="#projects" class="nav-item" data-section="projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a>
+        <a href="#education" class="nav-item" data-section="education"><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a>
+        <a href="#github" class="nav-item" data-section="github"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+        <a href="#contact" class="nav-item" data-section="contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="https://akresumeinknow.netlify.app/" target="_blank" rel="noopener" class="resume-pill">
+          <i class="fa-solid fa-file-lines"></i> Resume
+        </a>
+        <div class="commit-status">
+          <span class="status-dot"></span> Open to opportunities
+        </div>
+        <div class="sidebar-socials">
+          <a href="https://github.com/Abhishekke277" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-kevat-a116b028a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:abhishekkewat7566@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main">
+
+      <section id="hero" class="section hero-section">
+        <div class="hero-copy">
+          <p class="hero-kicker">Full-stack developer, based in Bhopal</p>
+          <h1 class="hero-name">Abhishek Kevat</h1>
+          <p class="hero-tagline">
+            I build clean, functional web applications — pairing backend engineering in Python and FastAPI with practical, applied AI.
+          </p>
+
+          <div class="badge-row">
+            <span class="badge">BCA, 2023–26</span>
+            <span class="badge">SDE + Applied AI, Masai</span>
+            <span class="badge">IIT Patna · Vishlesan I-Hub</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="editor-window hero-window">
+          <div class="window-chrome">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="window-filename">profile.js</span>
+          </div>
+          <div class="window-body hero-body">
+            <p class="code-line"><span class="tok-key">const</span> <span class="tok-var">developer</span> <span class="tok-op">=</span> <span class="tok-brace">{</span></p>
+            <p class="code-line indent"><span class="tok-prop">name</span><span class="tok-op">:</span> <span class="tok-string">"Abhishek Kevat"</span><span class="tok-op">,</span></p>
+            <p class="code-line indent"><span class="tok-prop">role</span><span class="tok-op">:</span> <span class="typing-wrap">"<span id="typingRole"></span><span class="type-cursor">|</span>"</span><span class="tok-op">,</span></p>
+            <p class="code-line indent"><span class="tok-prop">basedIn</span><span class="tok-op">:</span> <span class="tok-string">"Bhopal, India"</span><span class="tok-op">,</span></p>
+            <p class="code-line indent"><span class="tok-prop">focus</span><span class="tok-op">:</span> <span class="tok-string">"FastAPI · JWT · SQL · Applied AI"</span></p>
+            <p class="code-line"><span class="tok-brace">}</span><span class="tok-op">;</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-grid">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">
+              <img src="young looking picture Jul 30, 2026, 09_51_18 AM.png" alt="Abhishek Kevat" class="avatar-img" />
+            </div>
+            <span class="avatar-badge"><span class="avatar-dot"></span>Available</span>
+          </div>
+
+          <div class="about-content">
+            <p class="about-text">
+              I'm a BCA student at Makhanlal Chaturvedi University, Bhopal, and I've completed a Software
+              Development Engineering program with Applied AI from Masai School, in collaboration with
+              Vishlesan I-Hub, IIT Patna. My core stack is Python, FastAPI, MySQL, and Supabase, alongside
+              JavaScript, HTML, and CSS on the frontend.
+            </p>
+            <p class="about-text">
+              I like building real, working things — RESTful APIs, authentication flows, and interfaces
+              people actually use — and I'm always looking for the next problem worth solving.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num">4</span>
+                <span class="stat-label">Projects shipped</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Tools & technologies</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">2026</span>
+                <span class="stat-label">Graduating</span>
+              </div>
+            </div>
+
+            <a href="https://akresumeinknow.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary">View resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills &amp; tools</h2>
+        <p class="section-sub">A working stack across languages, frameworks, data, and dev tooling.</p>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <svg viewBox="0 0 512 512" class="skill-icon">
+                <path fill="#E44D26" d="M71 460L30 0h452l-41 460-185 52z" />
+                <path fill="#F16529" d="M256 472l149-41 35-391H256v432z" />
+                <path fill="#EBEBEB" d="M256 176h-84l-6-67h90V43h-156l18 200h148zm0 155l-40-11-3-31h-67l5 68 105 29z" />
+                <path fill="#FFFFFF" d="M256 176v67h84l-8 91-40 11v67l105-29 14-159-8-48z" />
+              </svg>
+              <p>HTML5</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 512 512" class="skill-icon">
+                <path fill="#264DE4" d="M71 460L30 0h452l-41 460-185 52z" />
+                <path fill="#2965F1" d="M256 472l149-41 35-391H256v432z" />
+                <path fill="#EBEBEB" d="M256 208h-80l-5-56h85V96h-148l15 168h133zm0 144l-40-11-3-31h-56l5 68 94 26z" />
+                <path fill="#FFFFFF" d="M256 208v56h75l-7 80-42 11v56l95-26 14-177zM256 96v56h139l5-56z" />
+              </svg>
+              <p>CSS3</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 256 256" class="skill-icon">
+                <rect width="256" height="256" fill="#F7DF1E" />
+                <path fill="#000" d="M67.3 213.3l19.6-11.9c3.8 6.7 7.3 12.3 15.6 12.3 8 0 13.1-3.1 13.1-15.2v-82.3h24.1v82.6c0 25-14.7 36.4-36.1 36.4-19.4 0-30.7-10-36.5-22zm85.3-2.6l19.6-11.3c5.2 8.5 12 14.8 24.1 14.8 10.1 0 16.5-5 16.5-11.9 0-8.3-6.6-11.3-17.7-16.2l-6.1-2.6c-17.6-7.5-29.3-16.9-29.3-36.8 0-18.3 14-32.3 35.8-32.3 15.6 0 26.8 5.4 34.9 19.6l-19.1 12.3c-4.2-7.5-8.7-10.4-15.8-10.4-7.2 0-11.8 4.6-11.8 10.4 0 7.3 4.6 10.2 15.2 14.8l6.1 2.6c20.7 8.9 32.4 18 32.4 38.5 0 22.1-17.3 34.2-40.6 34.2-22.8 0-37.5-10.9-44.7-25.2z" />
+              </svg>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 128 128" class="skill-icon">
+                <path fill="#387Eb8" d="M62.6 12c-23.7 0-22.3 10.3-22.3 10.3v10.6h22.7v3.2H31.3C18 36.1 18 53.6 18 53.6s-1.7 15.4 13.3 15.4h7.9v-11c0-16.7 13.8-16.1 13.8-16.1h22.5c11.9 0 11.9-11.2 11.9-11.2V22.4c0-10.4-14.8-10.4-24.8-10.4z" />
+                <path fill="#FFD43B" d="M65.4 116c23.7 0 22.3-10.3 22.3-10.3V95.1H65V91.9h31.7c13.3 0 13.3-17.5 13.3-17.5s1.7-15.4-13.3-15.4H88.8v11c0 16.7-13.8 16.1-13.8 16.1H52.5c-11.9 0-11.9 11.2-11.9 11.2v11.8c0 10.4 14.8 10.4 24.8 10.4z" />
+              </svg>
+              <p>Python</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <path fill="#336791" d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4z" />
+                <path fill="#4183C4" d="M20 7c0 2.21-3.58 4-8 4S4 9.21 4 7" />
+                <path fill="#64B5F6" d="M4 17c0 2.21 3.58 4 8 4s8-1.79 8-4" />
+              </svg>
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Data &amp; backend</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <svg viewBox="0 0 106 106" class="skill-icon">
+                <path fill="#3ECF8E" d="M57.6 102.3c-2.4 2.8-6.9 1.1-6.9-2.6V58.6H12c-4.4 0-6.9-5.1-4.1-8.5L50.5 2.7c2.4-2.8 6.9-1.1 6.9 2.6v41.1h38.7c4.4 0 6.9 5.1 4.1 8.5L57.6 102.3z" />
+              </svg>
+              <p>Supabase</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <ellipse cx="12" cy="5" rx="8" ry="3" fill="#4479A1" />
+                <path fill="#4479A1" d="M4 5v7c0 1.66 3.58 3 8 3s8-1.34 8-3V5c0 1.66-3.58 3-8 3S4 6.66 4 5z" />
+                <path fill="#4479A1" d="M4 12v7c0 1.66 3.58 3 8 3s8-1.34 8-3v-7c0 1.66-3.58 3-8 3s-8-1.34-8-3z" />
+              </svg>
+              <p>MySQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">AI / Applied ML</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <circle cx="12" cy="12" r="11" fill="#10A37F" />
+                <path fill="#fff" d="M12 5c1.2 0 2.2.7 2.7 1.7l2.4-.4a4.1 4.1 0 0 1 1.9 5 4 4 0 0 1-.4 4.6 4.1 4.1 0 0 1-4.4 2 4.1 4.1 0 0 1-6.9-1.5 4 4 0 0 1-2.7-1.9 4.1 4.1 0 0 1 .5-4.8A4.1 4.1 0 0 1 6.9 5.1 4.1 4.1 0 0 1 12 5z" />
+              </svg>
+              <p>Applied AI</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <rect width="24" height="24" rx="5" fill="#FF9900" />
+                <path fill="#fff" d="M6 15V9h2v6H6zm5 0V9h2l1.5 3L16 9h2v6h-2v-3.2L14.5 15h-1L12 11.8V15h-1z" />
+              </svg>
+              <p>Prompt Engineering</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <circle cx="12" cy="12" r="11" fill="#412991" />
+                <circle cx="12" cy="12" r="4" fill="#fff" />
+                <circle cx="12" cy="6" r="1.6" fill="#fff" />
+                <circle cx="18" cy="12" r="1.6" fill="#fff" />
+                <circle cx="12" cy="18" r="1.6" fill="#fff" />
+                <circle cx="6" cy="12" r="1.6" fill="#fff" />
+              </svg>
+              <p>LLM Integration</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <path fill="#0065A9" d="M17.5 0l-12 11.2L1.7 8.1 0 9.4l4.6 4.3L0 18l1.7 1.3 3.8-3.1L17.5 24 24 20.7V3.3L17.5 0z" />
+                <path fill="#007ACC" d="M17.5 3.5L8.2 12l9.3 8.5V3.5z" />
+                <path fill="#1F9CF0" d="M24 3.3l-6.5-3.3v24l6.5-3.3V3.3z" />
+              </svg>
+              <p>VS Code</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 128 128" class="skill-icon">
+                <path fill="#F05032" d="M124.6 57.3L70.7 3.4c-3.6-3.6-9.4-3.6-13 0L44.1 17 60.5 33.4c3.4-1.1 7.3-.4 10.1 2.3 2.8 2.8 3.5 6.7 2.3 10.1l16 16c3.4-1.1 7.3-.4 10.1 2.3 3.7 3.7 3.7 9.8 0 13.5-3.7 3.7-9.8 3.7-13.5 0-2.9-2.9-3.6-6.9-2.3-10.4L77.7 51.7V83.9c.8.4 1.5 1 2.2 1.7 3.7 3.7 3.7 9.8 0 13.5-3.7 3.7-9.8 3.7-13.5 0-3.7-3.7-3.7-9.8 0-13.5.9-.9 1.9-1.5 3-1.9V51.1c-1.1-.4-2.1-1-3-1.9-2.9-2.9-3.6-6.9-2.3-10.3L47.7 22.5 3.4 66.8c-3.6 3.6-3.6 9.4 0 13l53.9 53.9c3.6 3.6 9.4 3.6 13 0l54.3-54.3c3.6-3.6 3.6-9.5 0-12.1z" />
+              </svg>
+              <p>Git</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 1.005-.315 3.3 1.23a9.582 9.582 0 0 1 2.496-.336c.845 0 1.696.114 2.496.336 1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.435.375.81 1.095.81 2.22 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" />
+              </svg>
+              <p>GitHub</p>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 24 24" class="skill-icon">
+                <circle cx="12" cy="12" r="12" fill="#FF6C37" />
+                <path fill="#fff" d="M17.82 10.41l-4.94 4.94a.75.75 0 0 1-1.06 0l-2.47-2.47a.75.75 0 0 1 1.06-1.06l1.94 1.94 4.41-4.41a.75.75 0 0 1 1.06 1.06z" />
+              </svg>
+              <p>Postman</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">A handful of things I've built and shipped, end to end.</p>
+
+        <div class="filter-row" id="filterRow">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="python">Python</button>
+          <button class="filter-chip" data-filter="fastapi">FastAPI</button>
+          <button class="filter-chip" data-filter="javascript">JavaScript</button>
+          <button class="filter-chip" data-filter="database">MySQL / Supabase</button>
+          <button class="filter-chip" data-filter="html">HTML / CSS</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="repo-card tilt" data-tags="python fastapi javascript html css supabase database">
+            <div class="repo-card-media">
+              <img src="taskflow image.png" alt="TaskFlow project preview" loading="lazy" />
+            </div>
+            <div class="repo-card-body">
+              <div class="repo-card-head">
+                <i class="fa-solid fa-list-check"></i>
+                <h3>TaskFlow</h3>
+              </div>
+              <p class="repo-desc">
+                A full-stack task management platform with AI-assisted task creation, workspace management, secure JWT authentication, and complete task CRUD workflows. Features dynamic search, priority sorting, and status filtering.
+              </p>
+              <div class="tech-stack-container">
+                <span class="tech-stack-label">Tech stack</span>
+                <div class="repo-tags">
+                  <span class="lang-tag"><span class="lang-dot dot-python"></span>Python</span>
+                  <span class="lang-tag"><span class="lang-dot dot-fastapi"></span>FastAPI</span>
+                  <span class="lang-tag"><span class="lang-dot dot-supabase"></span>Supabase</span>
+                  <span class="lang-tag"><span class="lang-dot dot-js"></span>JavaScript</span>
+                  <span class="lang-tag"><span class="lang-dot dot-html"></span>HTML</span>
+                  <span class="lang-tag"><span class="lang-dot dot-css"></span>CSS</span>
+                </div>
+              </div>
+              <div class="repo-actions">
+                <a href="https://github.com/Abhishekke277/taskflow" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://taskflow-backend1.netlify.app" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="repo-card tilt" data-tags="python fastapi javascript html css mysql render netlify database">
+            <div class="repo-card-media">
+              <img src="mealsprint.png" alt="MealSprint project preview" loading="lazy" />
+            </div>
+            <div class="repo-card-body">
+              <div class="repo-card-head">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>MealSprint</h3>
+              </div>
+              <p class="repo-desc">
+                A full-stack food ordering platform with a customer ordering interface and admin dashboard. Features FastAPI and SQLAlchemy REST APIs for dish catalogs, cart management, and order tracking, deployed using a decoupled cloud architecture.
+              </p>
+              <div class="tech-stack-container">
+                <span class="tech-stack-label">Tech stack</span>
+                <div class="repo-tags">
+                  <span class="lang-tag"><span class="lang-dot dot-python"></span>Python</span>
+                  <span class="lang-tag"><span class="lang-dot dot-fastapi"></span>FastAPI</span>
+                  <span class="lang-tag"><span class="lang-dot dot-mysql"></span>MySQL</span>
+                  <span class="lang-tag"><span class="lang-dot dot-js"></span>JavaScript</span>
+                  <span class="lang-tag"><span class="lang-dot dot-html"></span>HTML</span>
+                  <span class="lang-tag"><span class="lang-dot dot-css"></span>CSS</span>
+                  <span class="lang-tag"><span class="lang-dot dot-render"></span>Render</span>
+                  <span class="lang-tag"><span class="lang-dot dot-netlify"></span>Netlify</span>
+                </div>
+              </div>
+              <div class="repo-actions">
+                <a href="https://github.com/Abhishekke277/MealSprint" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://mealsprint1.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="repo-card tilt" data-tags="html css javascript">
+            <div class="repo-card-media">
+              <img src="hospital based img.png" alt="Hospital Management System preview" loading="lazy" />
+            </div>
+            <div class="repo-card-body">
+              <div class="repo-card-head">
+                <i class="fa-solid fa-house-medical"></i>
+                <h3>Hospital Management System</h3>
+              </div>
+              <p class="repo-desc">
+                A responsive multi-page site covering Home, About, Services, Doctors, and Contact — giving patients a clear view of hospital services and easy ways to get in touch.
+              </p>
+              <div class="tech-stack-container">
+                <span class="tech-stack-label">Tech stack</span>
+                <div class="repo-tags">
+                  <span class="lang-tag"><span class="lang-dot dot-html"></span>HTML</span>
+                  <span class="lang-tag"><span class="lang-dot dot-css"></span>CSS</span>
+                  <span class="lang-tag"><span class="lang-dot dot-js"></span>JavaScript</span>
+                </div>
+              </div>
+              <div class="repo-actions">
+                <a href="https://github.com/Abhishekke277" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://hospitabasedwebsite.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="repo-card tilt" data-tags="html css javascript">
+            <div class="repo-card-media">
+              <img src="game hub.png" alt="Game Hub project preview" loading="lazy" />
+            </div>
+            <div class="repo-card-body">
+              <div class="repo-card-head">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Game Hub</h3>
+              </div>
+              <p class="repo-desc">
+                A small arcade of browser games — Tic-Tac-Toe, Rock Paper Scissors, a memory/mind game, and more — built to practice interactive logic and DOM state management.
+              </p>
+              <div class="tech-stack-container">
+                <span class="tech-stack-label">Tech stack</span>
+                <div class="repo-tags">
+                  <span class="lang-tag"><span class="lang-dot dot-html"></span>HTML</span>
+                  <span class="lang-tag"><span class="lang-dot dot-css"></span>CSS</span>
+                  <span class="lang-tag"><span class="lang-dot dot-js"></span>JavaScript</span>
+                </div>
+              </div>
+              <div class="repo-actions">
+                <a href="https://github.com/Abhishekke277" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://netlifygamehub.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <h2 class="section-title">Education &amp; training</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-active"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-badge">Completed</span>
+                <span class="timeline-date">2025 – 2026</span>
+              </div>
+              <h3 class="timeline-title">Software Development Engineering with Applied AI</h3>
+              <p class="timeline-org">Masai School, Vishlesan I-Hub, IIT Patna</p>
+              <p class="timeline-desc">
+                Intensive, project-based training in full-stack engineering with a dedicated Applied AI track — covering backend architecture, APIs, and practical AI integration in production-style apps.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-badge timeline-badge-muted">2023 – 2026</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+              <p class="timeline-org">Makhanlal Chaturvedi University, Bhopal</p>
+              <p class="timeline-desc">
+                Core coursework in programming, databases, and web technologies — the foundation for everything I've built since.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="github" class="section">
+        <h2 class="section-title">GitHub activity</h2>
+        <p class="section-sub">
+          Live stats from <a href="https://github.com/Abhishekke277" target="_blank" rel="noopener">github.com/Abhishekke277</a>.
+        </p>
+
+        <div class="github-grid">
+          <div class="github-card github-card-wide">
+            <img src="https://streak-stats.demolab.com/?user=Abhishekke277&theme=github-dark-blue&hide_border=true" alt="GitHub streak" loading="lazy" />
+          </div>
+        </div>
+        <a href="https://github.com/Abhishekke277" target="_blank" rel="noopener" class="btn btn-ghost github-cta">
+          <i class="fa-brands fa-github"></i> View full profile on GitHub
+        </a>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section-title">Let's build something</h2>
+        <p class="section-sub">Have a role, project, or question in mind? I reply fast.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="contact-row" href="mailto:abhishekkewat7566@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">abhishekkewat7566@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 7566681792</span>
+              </div>
+            </div>
+            <a class="contact-row" href="https://github.com/Abhishekke277" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">@Abhishekke277</span>
+              </div>
+            </a>
+            <a class="contact-row" href="https://www.linkedin.com/in/abhishek-kevat-a116b028a/" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">/in/abhishek-kevat</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form id="contactForm" class="contact-form" novalidate>
+              <label for="name1">Name</label>
+              <input type="text" id="name1" name="name" placeholder="Your name" required />
+              <span class="field-error" data-for="name1"></span>
+
+              <label for="email1">Email</label>
+              <input type="email" id="email1" name="email" placeholder="you@example.com" required />
+              <span class="field-error" data-for="email1"></span>
+
+              <label for="message1">Message</label>
+              <textarea id="message1" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+              <span class="field-error" data-for="message1"></span>
+
+              <button type="submit" id="mail" class="btn btn-primary btn-full">
+                <span class="btn-text">Send message</span>
+              </button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Built by Abhishek Kevat, <span id="footerYear"></span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/Abhishekke277" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-kevat-a116b028a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:abhishekkewat7566@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
